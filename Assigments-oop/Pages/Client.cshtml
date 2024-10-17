@@ -1,0 +1,50 @@
+﻿@page
+@model ASSIGMENTS.Pages.ClientModel
+@{
+    ViewData["Title"] = "Client Management";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!-- Form to add a new client -->
+<form method="post">
+    <div class="form-group">
+        <label for="ClientName">Client Name:</label>
+        <input type="text" id="ClientName" name="ClientName" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="ClientEmail">Client Email:</label>
+        <input type="email" id="ClientEmail" name="ClientEmail" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="ClientPhoneNumber">Phone Number:</label>
+        <input type="text" id="ClientPhoneNumber" name="ClientPhoneNumber" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="ClientAssociatedProject">Associated Project:</label>
+        <input type="text" id="ClientAssociatedProject" name="ClientAssociatedProject" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Add Client</button>
+</form>
+
+<hr />
+
+<!-- Display the list of clients -->
+<h2>Clients</h2>
+@if (Model.Clients != null && Model.Clients.Any())
+{
+    <ul class="list-group">
+        @foreach (var client in Model.Clients)
+        {
+            <li class="list-group-item">
+                <strong>Name:</strong> @client.Name <br />
+                <strong>Email:</strong> @client.Email <br />
+                <strong>Phone Number:</strong> @client.PhoneNumber <br />
+                <strong>Associated Project:</strong> @client.AssociatedProject
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No clients available.</p>
+}

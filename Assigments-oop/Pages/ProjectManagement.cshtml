@@ -1,0 +1,47 @@
+﻿@page
+@model Assigments_oop.Pages.ProjectManagementModel
+@{
+    ViewData["Title"] = "Project Management";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h2>Manage Projects</h2>
+    <form method="post">
+        <div>
+            <label for="ProjectName">Project Name:</label>
+            <input type="text" id="ProjectName" name="ProjectName" value="@Model.ProjectName" required />
+        </div>
+
+        <div>
+            <label for="ProjectSummary">Project Summary:</label>
+            <textarea id="ProjectSummary" name="ProjectSummary" required>@Model.ProjectSummary</textarea>
+        </div>
+
+        <div>
+            <label for="ProjectDeadline">Project Deadline:</label>
+            <input type="date" id="ProjectDeadline" name="ProjectDeadline" value="@Model.ProjectDeadline.ToString("yyyy-MM-dd")" required />
+        </div>
+
+        <button type="submit">Add Project</button>
+    </form>
+
+    <h3>Project List</h3>
+    <ul>
+        @foreach (var project in Model.Projects)
+        {
+            <li>
+                <strong>@project.Name:</strong> @project.Summary <br />
+                <strong>Deadline:</strong> @project.Deadline.ToString("yyyy-MM-dd") <br />
+                <strong>Tasks:</strong>
+                <ul>
+                    @foreach (var task in project.Tasks)
+                    {
+                        <li>@task.Description - Status: @task.Status</li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+</div>

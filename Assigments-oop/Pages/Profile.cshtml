@@ -1,0 +1,34 @@
+﻿@page
+@model ASSIGMENTS.Pages.ProfileModel
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h2>Your Profile</h2>
+    <form method="post">
+        <div>
+            <label for="UserName">Name:</label>
+            <input type="text" id="UserName" name="UserName" value="@Model.UserName" required />
+        </div>
+
+        <div>
+            <label for="UserEmail">Email:</label>
+            <input type="email" id="UserEmail" name="UserEmail" value="@Model.UserEmail" required />
+        </div>
+
+        <div>
+            <label for="UserPhone">Phone:</label>
+            <input type="text" id="UserPhone" name="UserPhone" value="@Model.UserPhone" />
+        </div>
+
+        <button type="submit">Save Changes</button>
+    </form>
+
+    <h3>Profile Details</h3>
+    <p><strong>Name:</strong> @Model.UserName</p>
+    <p><strong>Email:</strong> @Model.UserEmail</p>
+    <p><strong>Phone:</strong> @Model.UserPhone</p>
+</div>

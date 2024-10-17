@@ -1,0 +1,30 @@
+﻿@page
+@model ASSIGMENTS.Pages.TaskManagementModel
+@{
+    ViewData["Title"] = "Task Management";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div>
+        <label for="Title">Task Title:</label>
+        <input type="text" id="Title" name="Title" required />
+    </div>
+    <div>
+        <label for="Description">Description:</label>
+        <input type="text" id="Description" name="Description" />
+    </div>
+    <button type="submit">Add Task</button>
+</form>
+
+<h2>Tasks</h2>
+<ul>
+    @foreach (var task in Model.Tasks)
+    {
+        <li>
+            <strong>Title:</strong> @task.Title <br />
+            <strong>Description:</strong> @task.Description
+        </li>
+    }
+</ul>
