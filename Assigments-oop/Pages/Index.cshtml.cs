@@ -1,21 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ASSIGMENTS.Pages
 {
     public class IndexModel : PageModel
     {
-        // This property will hold a simple message to be displayed on the page
-        public string WelcomeMessage="";//{ get(); private set;}
+        // This property holds the welcome message to be displayed on the page
+        public string WelcomeMessage { get; private set; }
+
+        // This method runs when the page is accessed
         public void OnGet()
         {
-            // Set a welcome message when the page is accessed
+            // Set the welcome message
             WelcomeMessage = "Welcome to the Project Management Dashboard!";
-        }
-        public string get(){
-            return WelcomeMessage;
-        }
-        public void set( string n){
-            WelcomeMessage=n;
         }
     }
 }
