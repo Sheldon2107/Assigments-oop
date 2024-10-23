@@ -1,18 +1,133 @@
-﻿@page
+@page
 @model ASSIGMENTS.Pages.IndexModel
+@{
+    ViewData["Title"] = "Kampung Manage";
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Management Dashboard</title>
-</head>
-<body>
-    <h1>@Model.WelcomeMessage</h1>
-    <p>This is the main page of your Project Management Dashboard.</p>
+<div class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>Efficient Project Management for Your Village</h1>
+        <h2>Empowering Communities with Simple Tools</h2>
 
-    <!-- Reference the image -->
-    <img src="~/images/Batman.png" alt="Batman" style="max-width:100%; height:auto;" />
-</body>
-</html>
+        <p>Lets start by register ur account</p>
+        <a href="/Profile" class="cta-button">Get Started</a>
+    </div>
+</div>
+
+<div class="navbar">
+    <ul>
+        <li><a href="/About">About</a></li>
+        <li><a href="/Projects">Projects</a></li>
+        <li><a href="/Services">Services</a></li>
+        <li><a href="/Contact">Contact</a></li>
+        <li><a href="/Login" class="login-btn">Log In</a></li>
+    </ul>
+</div>
+
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .hero-section {
+        position: relative;
+        height: 100vh;
+        background-image: url('/images/official.png');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 20px 0;
+        color: #f0f8e2;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .cta-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 30px;
+        background-color: #e3f2c1;
+        color: black;
+        font-size: 1.2rem;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background-color 0.3s;
+    }
+
+        .cta-button:hover {
+            background-color: #c5e1a5;
+        }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+        }
+
+            .navbar ul li {
+                display: inline;
+            }
+
+                .navbar ul li a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    padding: 5px 10px;
+                }
+
+    .login-btn {
+        background-color: #e3f2c1;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+        .login-btn:hover {
+            background-color: #c5e1a5;
+        }
+</style>
