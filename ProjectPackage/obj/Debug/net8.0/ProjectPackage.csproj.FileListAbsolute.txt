@@ -1,0 +1,6 @@
+C:\Users\Acer\OneDrive - Universiti Teknologi PETRONAS\undergraduate IT\1st year 2nd Semester\TFB1033 Object Oriented Programming\Assigments-oop\ProjectPackage\obj\Debug\net8.0\ProjectPackage.csproj.AssemblyReference.cache
+C:\Users\Acer\OneDrive - Universiti Teknologi PETRONAS\undergraduate IT\1st year 2nd Semester\TFB1033 Object Oriented Programming\Assigments-oop\ProjectPackage\obj\Debug\net8.0\ProjectPackage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\OneDrive - Universiti Teknologi PETRONAS\undergraduate IT\1st year 2nd Semester\TFB1033 Object Oriented Programming\Assigments-oop\ProjectPackage\obj\Debug\net8.0\ProjectPackage.AssemblyInfoInputs.cache
+C:\Users\Acer\OneDrive - Universiti Teknologi PETRONAS\undergraduate IT\1st year 2nd Semester\TFB1033 Object Oriented Programming\Assigments-oop\ProjectPackage\obj\Debug\net8.0\ProjectPackage.AssemblyInfo.cs
+C:\Users\Acer\OneDrive - Universiti Teknologi PETRONAS\undergraduate IT\1st year 2nd Semester\TFB1033 Object Oriented Programming\Assigments-oop\ProjectPackage\obj\Debug\net8.0\ProjectPackage.csproj.CoreCompileInputs.cache
+C:\Users\Acer\OneDrive - Universiti Teknologi PETRONAS\undergraduate IT\1st year 2nd Semester\TFB1033 Object Oriented Programming\Assigments-oop\ProjectPackage\obj\Debug\net8.0\ProjectPackage.sourcelink.json

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer\\OneDrive - Universiti Teknologi PETRONAS\\undergraduate IT\\1st year 2nd Semester\\TFB1033 Object Oriented Programming\\Assigments-oop\\Assigments-oop\\Assigments-oop.csproj": {}
+    "C:\\Users\\Acer\\OneDrive - Universiti Teknologi PETRONAS\\undergraduate IT\\1st year 2nd Semester\\TFB1033 Object Oriented Programming\\Assigments-oop\\assigments-oop\\Assigments-oop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer\\OneDrive - Universiti Teknologi PETRONAS\\undergraduate IT\\1st year 2nd Semester\\TFB1033 Object Oriented Programming\\Assigments-oop\\Assigments-oop\\Assigments-oop.csproj": {
+    "C:\\Users\\Acer\\OneDrive - Universiti Teknologi PETRONAS\\undergraduate IT\\1st year 2nd Semester\\TFB1033 Object Oriented Programming\\Assigments-oop\\assigments-oop\\Assigments-oop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\OneDrive - Universiti Teknologi PETRONAS\\undergraduate IT\\1st year 2nd Semester\\TFB1033 Object Oriented Programming\\Assigments-oop\\Assigments-oop\\Assigments-oop.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\OneDrive - Universiti Teknologi PETRONAS\\undergraduate IT\\1st year 2nd Semester\\TFB1033 Object Oriented Programming\\Assigments-oop\\assigments-oop\\Assigments-oop.csproj",
         "projectName": "Assigments-oop",
-        "projectPath": "C:\\Users\\Acer\\OneDrive - Universiti Teknologi PETRONAS\\undergraduate IT\\1st year 2nd Semester\\TFB1033 Object Oriented Programming\\Assigments-oop\\Assigments-oop\\Assigments-oop.csproj",
+        "projectPath": "C:\\Users\\Acer\\OneDrive - Universiti Teknologi PETRONAS\\undergraduate IT\\1st year 2nd Semester\\TFB1033 Object Oriented Programming\\Assigments-oop\\assigments-oop\\Assigments-oop.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\OneDrive - Universiti Teknologi PETRONAS\\undergraduate IT\\1st year 2nd Semester\\TFB1033 Object Oriented Programming\\Assigments-oop\\Assigments-oop\\obj\\",
+        "outputPath": "C:\\Users\\Acer\\OneDrive - Universiti Teknologi PETRONAS\\undergraduate IT\\1st year 2nd Semester\\TFB1033 Object Oriented Programming\\Assigments-oop\\assigments-oop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -114,6 +114,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FireBaseAdmin": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
             "Google.Apis.Auth": {
               "target": "Package",
               "version": "[1.68.0, )"

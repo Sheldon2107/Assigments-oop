@@ -4,7 +4,6 @@ public class saving
 {
     public string id {get;set;}
     public float val{get;set;}
-
     public saving(){
         id = "";
         val = "";
@@ -16,6 +15,4 @@ public class saving
         this.id = id;
         this.val = val;
     }
-
-
 }
