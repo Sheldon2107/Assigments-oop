@@ -18,5 +18,8 @@ Involved firestore initialization, save the saving info to firestore, and retrie
 
 ## ProjectRun
 This class was created to test the functionality of the ProjectPackage
+### Terminal displaying output connecting and retrieving to the firestore database
+![Terminal Output](Ass-H3-Output.png)
+### Database after running the code
 ![Firebase Database](Ass-H3-Firebase.png)
 
