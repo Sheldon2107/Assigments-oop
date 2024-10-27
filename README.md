@@ -5,7 +5,7 @@ Write a class to manage saving / restoring data for your app using Firestore dat
 This is a package library that store all the related class
 
 ### 1) saving.cs 
-Pure class for this application '\n'
+Pure class for this application.
 A class to store a saving information such ID, value, description,date created,  category of the savings and the targetted amount
 ### 2) savingList.cs
 Pure class for this application to store all the savings created for displaying purposes 
